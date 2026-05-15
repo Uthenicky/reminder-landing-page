@@ -1,167 +1,141 @@
-import { LogoIcon } from "./Icons";
+import { MessageCircle, Instagram, Youtube } from "lucide-react";
+
+const footerLinks = {
+  Produk: [
+    { label: "Fitur", href: "#features" },
+    { label: "Cara Kerja", href: "#how-it-works" },
+    { label: "Harga", href: "#pricing" },
+    { label: "FAQ", href: "#faq" },
+  ],
+  Pengguna: [
+    { label: "Guru Privat", href: "#" },
+    { label: "Tempat Les", href: "#" },
+    { label: "Daycare", href: "#" },
+    { label: "Bimbel", href: "#" },
+    { label: "Sekolah", href: "#" },
+  ],
+  Perusahaan: [
+    { label: "Tentang Kami", href: "#" },
+    { label: "Blog", href: "#" },
+    { label: "Kontak", href: "#" },
+    { label: "Kebijakan Privasi", href: "#" },
+    { label: "Syarat Layanan", href: "#" },
+  ],
+};
 
 export const Footer = () => {
   return (
-    <footer id="footer">
-      <hr className="w-11/12 mx-auto" />
-
-      <section className="container py-20 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
-        <div className="col-span-full xl:col-span-2">
+    <footer id="footer" className="border-t bg-muted/30">
+      {/* WhatsApp CTA Banner */}
+      <div className="bg-primary/10 border-b border-primary/20">
+        <div className="container py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="text-center md:text-left">
+            <p className="font-bold text-lg">Siap membuat cashflow lebih lancar?</p>
+            <p className="text-muted-foreground text-sm">
+              Bergabunglah dengan 500+ lembaga yang sudah memakai Lancar Iuran.
+            </p>
+          </div>
           <a
+            href="https://wa.me/6282299459702"
+            target="_blank"
             rel="noreferrer noopener"
-            href="/"
-            className="font-bold text-xl flex"
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold text-sm hover:opacity-90 transition-opacity shadow-md shadow-primary/30 whitespace-nowrap"
           >
-            <LogoIcon />
-            ShadcnUI/React
+            <MessageCircle className="w-4 h-4" />
+            Coba Gratis via WhatsApp
           </a>
         </div>
+      </div>
 
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Follow US</h3>
-          <div>
+      {/* Main Footer */}
+      <section className="container py-16 grid grid-cols-2 md:grid-cols-5 gap-x-8 gap-y-10">
+        {/* Brand */}
+        <div className="col-span-2 md:col-span-2">
+          <a
+            href="/"
+            className="font-bold text-xl flex items-center gap-2 mb-4"
+          >
+            <div className="bg-primary rounded-lg p-1.5">
+              <MessageCircle className="w-5 h-5 text-primary-foreground fill-primary-foreground" />
+            </div>
+            <span>
+              Lancar<span className="text-primary"> Iuran</span>
+            </span>
+          </a>
+          <p className="text-muted-foreground text-sm leading-relaxed max-w-xs mb-6">
+            Platform WhatsApp Automation untuk membantu lembaga pendidikan
+            mengelola iuran dan tagihan secara otomatis.
+          </p>
+
+          {/* Social links */}
+          <div className="flex gap-3">
             <a
+              href="https://instagram.com"
+              target="_blank"
               rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
+              aria-label="Instagram Lancar Iuran"
+              className="w-9 h-9 rounded-lg bg-muted border border-border flex items-center justify-center hover:border-primary/40 hover:bg-primary/10 transition-colors"
             >
-              Github
+              <Instagram className="w-4 h-4" />
             </a>
-          </div>
-
-          <div>
             <a
+              href="https://wa.me/6282299459702"
+              target="_blank"
               rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
+              aria-label="WhatsApp Lancar Iuran"
+              className="w-9 h-9 rounded-lg bg-muted border border-border flex items-center justify-center hover:border-primary/40 hover:bg-primary/10 transition-colors"
             >
-              Twitter
+              <MessageCircle className="w-4 h-4" />
             </a>
-          </div>
-
-          <div>
             <a
+              href="https://youtube.com"
+              target="_blank"
               rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
+              aria-label="YouTube Lancar Iuran"
+              className="w-9 h-9 rounded-lg bg-muted border border-border flex items-center justify-center hover:border-primary/40 hover:bg-primary/10 transition-colors"
             >
-              Dribbble
-            </a>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Platforms</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Web
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Mobile
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Desktop
+              <Youtube className="w-4 h-4" />
             </a>
           </div>
         </div>
 
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">About</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Features
-            </a>
+        {/* Link columns */}
+        {Object.entries(footerLinks).map(([category, links]) => (
+          <div key={category} className="flex flex-col gap-3">
+            <h3 className="font-bold text-sm uppercase tracking-wider text-foreground/70">
+              {category}
+            </h3>
+            {links.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                rel="noreferrer noopener"
+                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
           </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Pricing
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              FAQ
-            </a>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Community</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Youtube
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Discord
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Twitch
-            </a>
-          </div>
-        </div>
+        ))}
       </section>
 
-      <section className="container pb-14 text-center">
-        <h3>
-          &copy; 2024 Landing page made by{" "}
+      {/* Bottom bar */}
+      <section className="container border-t border-border py-6 flex flex-col sm:flex-row items-center justify-between gap-2">
+        <p className="text-sm text-muted-foreground text-center sm:text-left">
+          © 2026{" "}
           <a
-            rel="noreferrer noopener"
+            href="https://utheai.my.id"
             target="_blank"
-            href="https://www.linkedin.com/in/leopoldo-miranda/"
-            className="text-primary transition-all border-primary hover:border-b-2"
+            rel="noreferrer noopener"
+            className="text-primary hover:underline font-medium"
           >
-            Leo Miranda
-          </a>
-        </h3>
+            Lancar Iuran
+          </a>{" "}
+          · utheai.my.id · Hak cipta dilindungi.
+        </p>
+        <p className="text-xs text-muted-foreground">
+          Dibuat dengan ❤️ untuk pendidikan Indonesia
+        </p>
       </section>
     </footer>
   );
