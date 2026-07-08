@@ -2,30 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-/* *=========== Lancar Iuran - Emerald Theme =========== */
+/* *=========== Lancar Iuran - Modern Emerald Theme =========== */
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --foreground: 222 47% 11%;
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card-foreground: 222 47% 11%;
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    /* Emerald 600 */
-    --primary: 158 64% 38%;
+    --popover-foreground: 222 47% 11%;
+    /* Vibrant Emerald-Teal */
+    --primary: 160 84% 39%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 152 60% 95%;
-    --secondary-foreground: 158 64% 28%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --accent: 152 60% 95%;
-    --accent-foreground: 158 64% 28%;
+    --secondary: 160 84% 96%;
+    --secondary-foreground: 160 84% 20%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 160 84% 96%;
+    --accent-foreground: 160 84% 20%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 158 64% 38%;
-    --radius: 0.625rem;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 160 84% 39%;
+    --radius: 0.75rem;
   }
 
   .dark {
@@ -36,19 +36,19 @@
     --popover: 222 47% 9%;
     --popover-foreground: 0 0% 95%;
     /* Emerald 400 in dark */
-    --primary: 158 64% 52%;
-    --primary-foreground: 158 64% 5%;
-    --secondary: 222 30% 18%;
+    --primary: 160 84% 45%;
+    --primary-foreground: 160 84% 5%;
+    --secondary: 222 30% 15%;
     --secondary-foreground: 0 0% 98%;
     --muted: 222 30% 15%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 222 30% 18%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 222 30% 15%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
     --border: 222 30% 18%;
     --input: 222 30% 18%;
-    --ring: 158 64% 52%;
+    --ring: 160 84% 45%;
   }
 }
 

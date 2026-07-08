@@ -14,50 +14,50 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Reminder WhatsApp Otomatis",
+    title: "Reminder & Update Otomatis",
     description:
-      "Sistem kami mengirim pengingat iuran dan tagihan secara otomatis ke orang tua siswa — tanpa perlu admin chat satu per satu.",
+      "Sistem kami mengirim pengingat jadwal, status pesanan, dan tagihan secara otomatis — tanpa perlu admin chat satu per satu.",
     icon: <MessageCircle className="w-7 h-7 text-primary" />,
     badge: "Paling Digunakan",
     points: [
-      "Reminder jatuh tempo otomatis",
       "Follow-up pembayaran otomatis",
-      "Notifikasi langsung ke orang tua",
+      "Update resi & status booking",
+      "Notifikasi langsung ke pelanggan",
     ],
   },
   {
     title: "Admin Digital AI",
     description:
-      "Chatbot berbasis AI yang siap menjawab pertanyaan orang tua 24 jam — dari cek status pembayaran sampai info jadwal.",
+      "Chatbot berbasis AI yang siap menjawab pertanyaan pelanggan 24 jam — dari cek status hingga info layanan.",
     icon: <Bot className="w-7 h-7 text-primary" />,
     badge: "Berbasis AI",
     points: [
-      "Jawab pertanyaan umum orang tua",
-      "Bantu admin sekolah lebih santai",
+      "Jawab pertanyaan umum seketika",
+      "Bantu admin lebih santai",
       "Respons cepat berbasis AI",
     ],
   },
   {
-    title: "Monitoring Pembayaran",
+    title: "Monitoring Real-time",
     description:
-      "Pantau status pembayaran semua siswa dalam satu dashboard. Tahu siapa yang sudah bayar, siapa yang belum.",
+      "Pantau status pembayaran, stok, atau booking dalam satu dashboard. Semua data tersinkronisasi otomatis.",
     icon: <BarChart3 className="w-7 h-7 text-primary" />,
     badge: "Real-time",
     points: [
-      "Status pembayaran per siswa",
-      "Riwayat transaksi lengkap",
-      "Monitoring cashflow lebih mudah",
+      "Status transaksi per pelanggan",
+      "Riwayat aktivitas lengkap",
+      "Monitoring performa bisnis",
     ],
   },
   {
     title: "Hemat Waktu Admin",
     description:
-      "Biarkan sistem yang bekerja. Admin tidak perlu lagi chat satu-satu — fokus saja mengembangkan bisnis pendidikan.",
+      "Biarkan sistem yang bekerja. Admin tidak perlu lagi chat manual — fokus saja mengembangkan skala bisnis Anda.",
     icon: <Clock className="w-7 h-7 text-primary" />,
     badge: "Efisiensi",
     points: [
-      "Tidak perlu chat satu-satu lagi",
-      "Kurangi pekerjaan admin manual",
+      "Kurangi pekerjaan manual",
+      "Efisiensi biaya operasional",
       "Fokus kembangkan bisnis",
     ],
   },
@@ -68,7 +68,7 @@ const featureTags: string[] = [
   "AI-Powered",
   "Real-time Dashboard",
   "Reminder Otomatis",
-  "Multi-siswa",
+  "Multi-Tenant",
   "Laporan Bulanan",
   "Dark Mode",
   "Mobile Friendly",
@@ -99,9 +99,9 @@ export const Features = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
-          Semua yang Kamu Butuhkan,{" "}
+          Semua Fitur Core yang,{" "}
           <span className="bg-gradient-to-r from-primary to-emerald-400 text-transparent bg-clip-text">
-            Dalam Satu Platform
+            Anda Butuhkan
           </span>
         </motion.h2>
         <motion.p
@@ -110,8 +110,8 @@ export const Features = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          Dari reminder otomatis hingga admin AI, Lancar Iuran hadir untuk meringankan
-          beban administrasi dan membuat cashflow lebih terkontrol.
+          Dari reminder otomatis hingga admin AI, kami hadir untuk meringankan
+          beban administrasi dan memastikan layanan ke pelanggan tetap maksimal.
         </motion.p>
       </div>
 

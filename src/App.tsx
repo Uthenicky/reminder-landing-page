@@ -1,5 +1,6 @@
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
+import { BusinessModules } from "./components/BusinessModules";
 import { Statistics } from "./components/Statistics";
 import { Features } from "./components/Features";
 import { Benefits } from "./components/Benefits";
@@ -17,6 +18,7 @@ function App() {
       <Navbar />
       <Hero />
       <Statistics />
+      <BusinessModules />
       <Features />
       <Benefits />
       <Services />
