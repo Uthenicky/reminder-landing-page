@@ -40,6 +40,7 @@ const pricingList: PricingProps[] = [
       "Belajar dari FAQ bisnis",
       "Respon cepat 24 Jam",
       "Dashboard Monitoring",
+      "Support",
     ],
   },
   {
@@ -55,13 +56,12 @@ const pricingList: PricingProps[] = [
     benefitList: [
       "Semua fitur Paket Balas",
       "Kuota pesan 10x lebih banyak",
-      "Prioritas Support",
-      "Laporan Penggunaan",
+      "Prioritas Support"
     ],
   },
   {
     title: "Paket Sales",
-    price: "Rp169.000",
+    price: "Rp199.000",
     period: "/ bulan",
     description: "Solusi lengkap dengan kualifikasi lead untuk membantu konversi tim sales Anda.",
     badgeLabel: "Paling Populer",
@@ -78,7 +78,7 @@ const pricingList: PricingProps[] = [
   },
   {
     title: "Paket Sales Pro",
-    price: "Rp219.000",
+    price: "Rp249.000",
     period: "/ bulan",
     description: "Kualifikasi lead cerdas untuk bisnis skala besar dengan volume tinggi.",
     badgeLabel: "Terbaik",
@@ -90,7 +90,7 @@ const pricingList: PricingProps[] = [
       "Semua fitur Paket Sales",
       "Kuota pesan 10x lebih banyak",
       "Analitik & Statistik Lengkap",
-      "Dedicated Support",
+      "Prioritas Support",
     ],
   },
 ];
@@ -102,7 +102,7 @@ const containerVariants = {
 
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.55,  } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.55, } },
 };
 
 export const Pricing = () => {
