@@ -7,9 +7,9 @@ import { cn } from "@/lib/utils";
 import type { Variants } from "framer-motion";
 
 const badges = [
-  "Sekolah & Bimbel",
-  "Tour & Travel",
-  "Toko Online",
+  "AI Admin WhatsApp",
+  "Balas Otomatis",
+  "Reminder Otomatis",
   "WhatsApp Automation",
 ];
 
@@ -56,9 +56,9 @@ export const Hero = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <h1>
-            Otomatiskan Bisnis,{" "}
+            AI WhatsApp Chatbot yang Membantu Bisnis Melayani Pelanggan{" "}
             <span className="inline bg-gradient-to-r from-primary to-teal-400 text-transparent bg-clip-text">
-              Pelanggan Makin Setia
+              24 Jam
             </span>
           </h1>
         </motion.main>
@@ -70,9 +70,7 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.35 }}
         >
-          Kirim reminder tagihan, konfirmasi booking, dan update resi pesanan otomatis lewat{" "}
-          <span className="text-primary font-semibold">WhatsApp</span>. Biarkan AI Admin
-          mengurus pelanggan Anda <span className="font-semibold">24 jam</span> penuh.
+          Balas chat otomatis, menjawab pertanyaan pelanggan, mengumpulkan calon pelanggan, mengirim reminder, hingga membantu tim Sales & Marketing Anda bekerja lebih efisien.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -92,7 +90,7 @@ export const Hero = () => {
               className="w-full sm:w-auto font-semibold text-base flex items-center gap-2 shadow-lg shadow-primary/30 hover:shadow-primary/50 transition-shadow"
             >
               <MessageCircle className="w-5 h-5" />
-              Coba Gratis
+              Mulai Gratis
             </Button>
           </a>
 
@@ -115,7 +113,7 @@ export const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.65 }}
         >
-          ✅ Gratis 2 bulan &nbsp;·&nbsp; 🔒 Data aman &nbsp;·&nbsp; 💬 Tanpa install aplikasi
+          ✅ Coba gratis 1 bulan &nbsp;·&nbsp; 🔒 Data aman &nbsp;·&nbsp; 💬 Tanpa install aplikasi
         </motion.p>
       </div>
 

@@ -36,7 +36,7 @@ const testimonials: TestimonialProps[] = [
     role: "Pemilik Bimbel",
     institution: "Bimbel Prestasi Malang",
     comment:
-      "Setelah pakai Lancar Iuran, tunggakan SPP turun drastis. Orang tua lebih responsif karena diingatkan via WA langsung. Mantap banget!",
+      "Setelah pakai LancarBales, tunggakan SPP turun drastis. Orang tua lebih responsif karena diingatkan via WA langsung. Mantap banget!",
     stars: 5,
   },
   {
@@ -45,7 +45,7 @@ const testimonials: TestimonialProps[] = [
     role: "Owner Travel",
     institution: "Berkah Umroh & Tour",
     comment:
-      "Admin saya dulu kewalahan follow-up jamaah. Sekarang dengan Lancar Iuran, semua reminder keberangkatan dan dokumen otomatis terkirim. Sangat membantu!",
+      "Admin saya dulu kewalahan follow-up jamaah. Sekarang dengan LancarBales, semua reminder keberangkatan dan dokumen otomatis terkirim. Sangat membantu!",
     stars: 5,
   },
   {

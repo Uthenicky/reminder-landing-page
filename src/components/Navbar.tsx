@@ -23,11 +23,11 @@ interface RouteProps {
 }
 
 const routeList: RouteProps[] = [
-  { href: "#features", label: "Fitur" },
-  { href: "#how-it-works", label: "Cara Kerja" },
-  { href: "#pricing", label: "Harga" },
-  { href: "#testimonials", label: "Testimoni" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#features", label: "Fitur" },
+  { href: "/#how-it-works", label: "Cara Kerja" },
+  { href: "/#pricing", label: "Harga" },
+  // { href: "/#testimonials", label: "Testimoni" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 export const Navbar = () => {
@@ -63,7 +63,7 @@ export const Navbar = () => {
               <div className="bg-primary rounded-lg p-1.5 flex items-center justify-center">
                 <MessageCircle className="w-5 h-5 text-primary-foreground fill-primary-foreground" />
               </div>
-              <span className="text-foreground">Lancar<span className="text-primary"> Iuran</span></span>
+              <span className="text-foreground">Balesin</span>
             </a>
           </NavigationMenuItem>
 
@@ -85,7 +85,7 @@ export const Navbar = () => {
                     <div className="bg-primary rounded-lg p-1.5">
                       <MessageCircle className="w-5 h-5 text-primary-foreground fill-primary-foreground" />
                     </div>
-                    Lancar Iuran
+                    Balesin
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-6">

@@ -16,47 +16,41 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Apakah harus install aplikasi untuk menggunakannya?",
+    question: "Apakah harus menggunakan WhatsApp Business?",
     answer:
-      "Tidak perlu! Lancar Iuran berbasis web dan bekerja via WhatsApp yang sudah ada di HP kamu. Orang tua siswa juga tidak perlu install apapun — mereka hanya menerima pesan WA seperti biasa.",
+      "Tidak. Sistem mendukung WhatsApp Business maupun integrasi sesuai paket yang dipilih.",
     value: "item-1",
   },
   {
-    question: "Apakah bisa dipakai di HP saja?",
+    question: "Apakah chatbot bisa belajar dari bisnis saya?",
     answer:
-      "Tentu bisa! Dashboard Lancar Iuran sepenuhnya mobile-friendly dan bisa diakses dari HP, tablet, maupun laptop. Kelola pembayaran siswa di mana saja dan kapan saja.",
+      "Ya. Anda cukup mengisi informasi bisnis, FAQ, atau data produk agar AI memberikan jawaban yang sesuai.",
     value: "item-2",
   },
   {
-    question: "Apakah reminder benar-benar dikirim otomatis?",
+    question: "Apakah bisa menangkap calon pembeli atau pelanggan",
     answer:
-      "Ya, 100% otomatis! Setelah kamu mengatur jadwal dan data siswa, sistem akan mengirim reminder sesuai tanggal yang kamu tentukan — tanpa kamu perlu melakukan apapun. Sistem aktif 24 jam, 7 hari seminggu.",
+      "Bisa. Sistem kami memiliki kecerdasan dan fitur untuk menangkap calon pembeli atau pelanggan dan akan otomatis mencatatnya di database. dan memfolow up ke tim sales anda",
     value: "item-3",
   },
   {
-    question: "Apakah data siswa dan pembayaran aman?",
+    question: "Apakah bisa digunakan untuk sekolah?",
     answer:
-      "Keamanan data adalah prioritas utama kami. Data kamu tersimpan dengan enkripsi dan tidak pernah dibagikan ke pihak ketiga. Kami juga rutin melakukan backup agar data tidak hilang.",
+      "Bisa. Sistem mendukung kebutuhan sekolah, kursus, bimbel, lembaga pendidikan, toko online, travel agent, dll.",
     value: "item-4",
   },
   {
-    question: "Apakah bisa coba dulu sebelum bayar?",
+    question: "Apakah bisa mengirim reminder pembayaran atau broadcast pesan?",
     answer:
-      "Bisa banget! Kami menyediakan paket Trial Gratis selama 2 bulan dengan akses ke semua fitur dasar, tanpa perlu kartu kredit atau komitmen apapun. Cukup daftar dan langsung coba!",
+      "Ya. Anda dapat mengatur pengingat otomatis seperti H-7, H-3, dan H-1 sebelum jatuh tempo.",
+    value: "item-4",
+  },
+  {
+    question: "Apakah ada biaya bulanan?",
+    answer:
+      "Ya. Sistem menggunakan model berlangganan bulanan sesuai paket yang dipilih.",
     value: "item-5",
   },
-  {
-  question: "Apakah harus menggunakan WhatsApp Business?",
-  answer:
-    "Tidak harus. Anda bisa menggunakan WhatsApp Business resmi (Meta) maupun WhatsApp biasa. Sistem kami mendukung keduanya sehingga lebih fleksibel sesuai kebutuhan Anda.",
-  value: "item-6",
-  },
-  {
-    question: "Apakah nomor WhatsApp bisa terkena banned?",
-    answer:
-      "Risiko banned sangat kecil selama penggunaan sesuai aturan. Sistem kami menggunakan teknologi pengiriman yang dirancang menyerupai aktivitas manusia agar lebih aman dan natural.",
-    value: "item-7",
-  }
 ];
 
 export const FAQ = () => {

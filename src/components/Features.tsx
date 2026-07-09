@@ -14,37 +14,37 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Reminder & Update Otomatis",
+    title: "Reminder & Broadcast Otomatis",
     description:
-      "Sistem kami mengirim pengingat jadwal, status pesanan, dan tagihan secara otomatis — tanpa perlu admin chat satu per satu.",
+      "Sistem kami mengirim pengingat jadwal, pembayaran, promo atau info penting lainnya secara otomatis — tanpa perlu admin chat satu per satu.",
     icon: <MessageCircle className="w-7 h-7 text-primary" />,
     badge: "Paling Digunakan",
     points: [
-      "Follow-up pembayaran otomatis",
-      "Update resi & status booking",
+      "Follow-up tagihan",
+      "Info Promo",
       "Notifikasi langsung ke pelanggan",
     ],
   },
   {
-    title: "Admin Digital AI",
+    title: "Admin Digital AI Lead Qualification",
     description:
-      "Chatbot berbasis AI yang siap menjawab pertanyaan pelanggan 24 jam — dari cek status hingga info layanan.",
+      "Chatbot berbasis AI yang siap menjawab pertanyaan pelanggan 24 jam seputar info layanan, FAQ, Support hingga menangkap calon pelanggan.",
     icon: <Bot className="w-7 h-7 text-primary" />,
     badge: "Berbasis AI",
     points: [
-      "Jawab pertanyaan umum seketika",
-      "Bantu admin lebih santai",
+      "Jawab pertanyaan umum 24 jam",
+      "Dapat menentukan calon pelanggan",
       "Respons cepat berbasis AI",
     ],
   },
   {
     title: "Monitoring Real-time",
     description:
-      "Pantau status pembayaran, stok, atau booking dalam satu dashboard. Semua data tersinkronisasi otomatis.",
+      "Pantau status pesan masuk dan kinerja admin dalam satu dashboard. Semua data tersinkronisasi otomatis.",
     icon: <BarChart3 className="w-7 h-7 text-primary" />,
     badge: "Real-time",
     points: [
-      "Status transaksi per pelanggan",
+      "Kepuasan pelanggan",
       "Riwayat aktivitas lengkap",
       "Monitoring performa bisnis",
     ],
@@ -64,12 +64,12 @@ const features: FeatureProps[] = [
 ];
 
 const featureTags: string[] = [
-  "WhatsApp Integration",
-  "AI-Powered",
-  "Real-time Dashboard",
+  "Tangkap Calon Pelanggan",
+  "Admin Digital AI",
+  "Dashboard Real-time",
   "Reminder Otomatis",
   "Multi-Tenant",
-  "Laporan Bulanan",
+  "Leads Otomatis",
   "Dark Mode",
   "Mobile Friendly",
   "Tanpa Install App",
@@ -82,7 +82,7 @@ const containerVariants = {
 
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.55,  } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.55, } },
 };
 
 export const Features = () => {
@@ -111,7 +111,7 @@ export const Features = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           Dari reminder otomatis hingga admin AI, kami hadir untuk meringankan
-          beban administrasi dan memastikan layanan ke pelanggan tetap maksimal.
+          beban administrasi dan tim Sales Anda untuk memastikan layanan ke pelanggan tetap maksimal.
         </motion.p>
       </div>
 

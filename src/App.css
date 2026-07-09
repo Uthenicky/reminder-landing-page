@@ -11,20 +11,21 @@
     --card-foreground: 222 47% 11%;
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
-    /* Vibrant Emerald-Teal */
-    --primary: 160 84% 39%;
+    /* Blue Primary */
+    --primary: 221 83% 53%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 160 84% 96%;
-    --secondary-foreground: 160 84% 20%;
+    --secondary: 221 83% 96%;
+    --secondary-foreground: 221 83% 20%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 160 84% 96%;
-    --accent-foreground: 160 84% 20%;
+    /* Green Accent */
+    --accent: 142 71% 45%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 160 84% 39%;
+    --ring: 221 83% 53%;
     --radius: 0.75rem;
   }
 
@@ -35,20 +36,21 @@
     --card-foreground: 0 0% 95%;
     --popover: 222 47% 9%;
     --popover-foreground: 0 0% 95%;
-    /* Emerald 400 in dark */
-    --primary: 160 84% 45%;
-    --primary-foreground: 160 84% 5%;
+    /* Blue in dark mode */
+    --primary: 221 83% 60%;
+    --primary-foreground: 221 83% 5%;
     --secondary: 222 30% 15%;
     --secondary-foreground: 0 0% 98%;
     --muted: 222 30% 15%;
     --muted-foreground: 215 20.2% 65.1%;
-    --accent: 222 30% 15%;
+    /* Green Accent */
+    --accent: 142 71% 50%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
     --border: 222 30% 18%;
     --input: 222 30% 18%;
-    --ring: 160 84% 45%;
+    --ring: 221 83% 60%;
   }
 }
 

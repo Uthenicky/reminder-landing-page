@@ -14,9 +14,9 @@ const steps: StepProps[] = [
   {
     step: 1,
     icon: <UserPlus className="w-8 h-8 text-primary" />,
-    title: "Daftar & Input Data Siswa",
+    title: "Daftar & Input Data",
     description:
-      "Daftar gratis selama 2 bulan. Masukkan data siswa dan nomor WhatsApp orang tua. Bisa import dari Excel atau CSV.",
+      "Mulai gratis selama 1 bulan. Masukkan data dan nomor kontak. Bisa import dari Excel atau CSV.",
   },
   {
     step: 2,
@@ -41,7 +41,7 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, y: 25 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.55,  } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.55, } },
 };
 
 export const Services = () => {
@@ -119,7 +119,7 @@ export const Services = () => {
           rel="noreferrer noopener"
           className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-xl font-semibold text-base hover:opacity-90 transition-opacity shadow-lg shadow-primary/30"
         >
-          Mulai Sekarang — Gratis 2 Bulan
+          Mulai Sekarang atau Coba Gratis 1 Bulan
         </a>
       </motion.div>
     </section>

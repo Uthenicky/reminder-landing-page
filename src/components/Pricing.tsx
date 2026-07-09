@@ -28,75 +28,69 @@ interface PricingProps {
 
 const pricingList: PricingProps[] = [
   {
-    title: "Trial",
-    price: "Gratis",
-    period: "2 Bulan",
-    description: "Coba semua fitur tanpa biaya. Cocok untuk kamu yang ingin merasakan manfaatnya dulu.",
-    buttonText: "Mulai Gratis Sekarang",
+    title: "Paket Balas",
+    price: "Rp99.000",
+    period: "/ bulan",
+    description: "Cocok untuk menjawab pertanyaan pelanggan secara cepat dan otomatis.",
+    buttonText: "Pilih Paket Balas",
     highlighted: false,
-    maxSiswa: "Maks. 50 Siswa",
+    maxSiswa: "1.000 Pesan",
     benefitList: [
-      "Semua fitur dasar tersedia",
-      "Reminder WhatsApp otomatis",
-      "Dashboard pembayaran",
-      "Support via WhatsApp",
-      "Tanpa kartu kredit",
+      "Menjawab pertanyaan otomatis",
+      "Belajar dari FAQ bisnis",
+      "Respon cepat 24 Jam",
+      "Dashboard Monitoring",
     ],
   },
   {
-    title: "Starter",
-    price: "Rp 99.000",
+    title: "Paket Balas Pro",
+    price: "Rp149.000",
     period: "/ bulan",
-    description: "Ideal untuk guru privat, tempat les rumahan, atau daycare dengan jumlah siswa kecil.",
-    badgeLabel: "Paling Hemat",
+    description: "Solusi balas otomatis untuk bisnis dengan volume interaksi tinggi.",
+    badgeLabel: "Value",
     badgeIcon: <Zap className="w-3 h-3" />,
-    buttonText: "Pilih Starter",
+    buttonText: "Pilih Balas Pro",
     highlighted: false,
-    maxSiswa: "Maks. 50 Siswa",
+    maxSiswa: "10.000 Pesan",
     benefitList: [
-      "Semua fitur Trial +",
-      "Reminder unlimited",
-      "Admin AI Chatbot",
-      "Laporan bulanan PDF",
-      "Priority email support",
+      "Semua fitur Paket Balas",
+      "Kuota pesan 10x lebih banyak",
+      "Prioritas Support",
+      "Laporan Penggunaan",
     ],
   },
   {
-    title: "Growth",
-    price: "Rp 149.000",
+    title: "Paket Sales",
+    price: "Rp169.000",
     period: "/ bulan",
-    description: "Untuk bimbel yang sedang berkembang dan butuh sistem lebih robust.",
+    description: "Solusi lengkap dengan kualifikasi lead untuk membantu konversi tim sales Anda.",
     badgeLabel: "Paling Populer",
     badgeIcon: <Star className="w-3 h-3" />,
-    buttonText: "Pilih Growth",
+    buttonText: "Pilih Paket Sales",
     highlighted: true,
-    maxSiswa: "Maks. 200 Siswa",
+    maxSiswa: "1.000 Pesan",
     benefitList: [
-      "Semua fitur Starter +",
-      "Multi admin (3 akun)",
-      "Integrasi kustom pesan",
-      "Analitik cashflow",
-      "WhatsApp dedicated support",
-      "Export data Excel",
+      "Semua fitur Paket Balas",
+      "Menanyakan kebutuhan pelanggan",
+      "Mengumpulkan data leads",
+      "Notif otomatis ke tim Sales (Hot Leads)",
     ],
   },
   {
-    title: "Pro",
-    price: "Rp 249.000",
+    title: "Paket Sales Pro",
+    price: "Rp219.000",
     period: "/ bulan",
-    description: "Untuk sekolah dan bimbel besar yang membutuhkan kapasitas penuh dan dukungan prioritas.",
-    badgeLabel: "Best Value",
+    description: "Kualifikasi lead cerdas untuk bisnis skala besar dengan volume tinggi.",
+    badgeLabel: "Terbaik",
     badgeIcon: <Crown className="w-3 h-3" />,
-    buttonText: "Pilih Pro",
+    buttonText: "Pilih Sales Pro",
     highlighted: false,
-    maxSiswa: "Maks. 500 Siswa",
+    maxSiswa: "10.000 Pesan",
     benefitList: [
-      "Semua fitur Growth +",
-      "Multi admin unlimited",
-      "Kustomisasi brand (logo)",
-      "API access",
-      "Dedicated account manager",
-      "SLA uptime 99.9%",
+      "Semua fitur Paket Sales",
+      "Kuota pesan 10x lebih banyak",
+      "Analitik & Statistik Lengkap",
+      "Dedicated Support",
     ],
   },
 ];
@@ -125,9 +119,9 @@ export const Pricing = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
-          Pilih Paket{" "}
+          Paket dan{" "}
           <span className="bg-gradient-to-r from-primary to-emerald-400 text-transparent bg-clip-text">
-            Sesuai Kebutuhan
+            Fitur
           </span>
         </motion.h2>
         <motion.p
@@ -136,7 +130,7 @@ export const Pricing = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          Mulai gratis, upgrade kapan saja. Tanpa kontrak jangka panjang, bisa cancel kapanpun.
+          Pilih solusi yang paling cocok untuk bisnis Anda.
         </motion.p>
       </div>
 
@@ -181,7 +175,7 @@ export const Pricing = () => {
                 </div>
 
                 <div className="mb-1">
-                  <span className="text-3xl font-extrabold">{plan.price}</span>
+                  <span className="text-2xl font-extrabold">{plan.price}</span>
                   <span className="text-muted-foreground text-sm ml-1">{plan.period}</span>
                 </div>
 
