@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: shadcn-landing-page
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      # Route request ke service ini berdasarkan host
+      # Ubah `localhost` dengan domain asli di production, misal Host(`example.com`)
+      - "traefik.http.routers.frontend.rule=Host(`localhost`)"
+      - "traefik.http.routers.frontend.entrypoints=web"
+      # Port Nginx di dalam container
+      - "traefik.http.services.frontend.loadbalancer.server.port=80"
+      # Memberitahu Traefik untuk merouting traffic melalui network eksternal ini
+      - "traefik.docker.network=traefik-proxy"
+    networks:
+      - traefik-proxy
+
+networks:
+  # Network eksternal ini digunakan bersama (shared) antara Traefik (yang berjalan terpisah) dan service frontend ini.
+  # Pastikan Anda sudah membuat network ini di environment production dengan command:
+  # docker network create traefik-proxy
+  traefik-proxy:
+    external: true
