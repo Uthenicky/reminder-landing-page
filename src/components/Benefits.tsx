@@ -1,9 +1,9 @@
 import { Card, CardContent } from "./ui/card";
 import {
-  TrendingDown,
-  Wallet,
+  Bot,
   Users,
-  Coffee,
+  Clock,
+  LayoutDashboard,
   Sparkles,
 } from "lucide-react";
 import { motion, useInView } from "framer-motion";
@@ -17,34 +17,34 @@ interface BenefitProps {
 
 const benefits: BenefitProps[] = [
   {
-    icon: <TrendingDown className="w-8 h-8 text-primary" />,
-    title: "Kurangi Telat Bayar",
+    icon: <Bot className="w-8 h-8 text-primary" />,
+    title: "AI Menjawab Chat Otomatis",
     description:
-      "Reminder otomatis memastikan orang tua tidak lupa membayar iuran tepat waktu. Tagihan lebih teratur, admin lebih tenang.",
-  },
-  {
-    icon: <Wallet className="w-8 h-8 text-primary" />,
-    title: "Cashflow Lebih Stabil",
-    description:
-      "Pembayaran yang konsisten membuat pemasukan lembaga lebih bisa diprediksi. Rencanakan pengembangan dengan lebih percaya diri.",
+      "Balas pertanyaan pelanggan kapan saja menggunakan informasi bisnis Anda.",
   },
   {
     icon: <Users className="w-8 h-8 text-primary" />,
-    title: "Orang Tua Lebih Responsif",
+    title: "Tangkap Calon Pelanggan",
     description:
-      "WhatsApp adalah aplikasi yang paling sering dibuka. Reminder via WA terbukti lebih efektif dibanding surat atau broadcast manual.",
+      "AI akan mengumpulkan informasi penting sebelum diteruskan ke tim sales.",
   },
   {
-    icon: <Coffee className="w-8 h-8 text-primary" />,
-    title: "Admin Lebih Santai",
+    icon: <Clock className="w-8 h-8 text-primary" />,
+    title: "Reminder Otomatis",
     description:
-      "Tidak ada lagi kerja overtime untuk follow-up pembayaran. Admin bisa fokus ke hal yang lebih penting — melayani siswa.",
+      "Kirim pengingat, jadwal, atau promo secara otomatis sesuai jadwal yang Anda tentukan.",
+  },
+  {
+    icon: <LayoutDashboard className="w-8 h-8 text-primary" />,
+    title: "Dashboard Monitoring",
+    description:
+      "Pantau seluruh percakapan, performa chatbot, dan aktivitas pelanggan dalam satu tempat.",
   },
   {
     icon: <Sparkles className="w-8 h-8 text-primary" />,
-    title: "Citra Lebih Profesional",
+    title: "Mudah Digunakan",
     description:
-      "Sistem reminder otomatis memberi kesan modern dan terpercaya pada orang tua. Meningkatkan kepercayaan terhadap lembaga.",
+      "Tidak perlu kemampuan teknis. Cukup sambungkan WhatsApp dan chatbot siap bekerja.",
   },
 ];
 
@@ -55,7 +55,7 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.5,  } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5, } },
 };
 
 export const Benefits = () => {
@@ -71,9 +71,9 @@ export const Benefits = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
-          Manfaat Nyata yang{" "}
+          Mengapa{" "}
           <span className="bg-gradient-to-r from-primary to-emerald-400 text-transparent bg-clip-text">
-            Langsung Terasa
+            Memilih Kami?
           </span>
         </motion.h2>
         <motion.p
@@ -82,7 +82,7 @@ export const Benefits = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          Ribuan lembaga pendidikan sudah merasakan bedanya. Bergabunglah dan rasakan sendiri.
+          Tingkatkan efisiensi bisnis Anda dengan fitur-fitur unggulan kami.
         </motion.p>
       </div>
 
@@ -95,9 +95,8 @@ export const Benefits = () => {
         {benefits.map((benefit, i) => (
           <motion.div key={benefit.title} variants={itemVariants}>
             <Card
-              className={`h-full border-2 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 group ${
-                i === 4 ? "sm:col-span-2 lg:col-span-1" : ""
-              }`}
+              className={`h-full border-2 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 group ${i === 4 ? "sm:col-span-2 lg:col-span-1" : ""
+                }`}
             >
               <CardContent className="p-6">
                 <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">

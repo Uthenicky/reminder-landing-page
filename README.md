@@ -3,7 +3,7 @@
 > Platform **WhatsApp Automation Reminder** untuk lembaga pendidikan Indonesia.
 > Reminder iuran & tagihan otomatis via WhatsApp, didukung AI Admin Digital.
 
-🌐 **Domain:** [utheai.my.id](https://utheai.my.id) &nbsp;|&nbsp; 👤 **Owner:** utheniky
+🌐 **Domain:** [lancarbales.com](https://lancarbales.com) &nbsp;|&nbsp; 👤 **Owner:** utheniky
 
 ---
 
@@ -133,4 +133,4 @@ Format nomor: `https://wa.me/628XXXXXXXXXX` (tanpa +, tanpa 0 di depan)
 
 ## Lisensi
 
-MIT License © 2026 [Lancar Iuran](https://utheai.my.id)
+MIT License © 2026 [Lancar Iuran](https://lancarbales.com)

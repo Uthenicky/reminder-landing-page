@@ -17,11 +17,10 @@ const WAChatBubble = ({
 }) => (
   <div className={`flex ${type === "sent" ? "justify-end" : "justify-start"} mb-2`}>
     <div
-      className={`max-w-[85%] px-3 py-2 rounded-2xl text-sm shadow-sm ${
-        type === "sent"
-          ? "bg-primary text-primary-foreground rounded-tr-sm"
-          : "bg-white dark:bg-slate-700 text-foreground rounded-tl-sm border border-border"
-      }`}
+      className={`max-w-[85%] px-3 py-2 rounded-2xl text-sm shadow-sm ${type === "sent"
+        ? "bg-primary text-primary-foreground rounded-tr-sm"
+        : "bg-white dark:bg-slate-700 text-foreground rounded-tl-sm border border-border"
+        }`}
     >
       {sender && (
         <p className="text-xs font-semibold text-primary mb-0.5">{sender}</p>
@@ -58,14 +57,14 @@ export const HeroCards = () => {
               <MessageCircle className="w-5 h-5 text-white fill-white" />
             </div>
             <div>
-              <p className="text-white font-semibold text-sm">Lancar Iuran Bot</p>
+              <p className="text-white font-semibold text-sm">LancarBales Bot</p>
               <p className="text-white/70 text-xs">🟢 Online</p>
             </div>
           </div>
           {/* Chat area */}
           <CardContent className="bg-[#ECE5DD] dark:bg-slate-800 p-3 space-y-1 min-h-[160px]">
             <WAChatBubble
-              message="Halo Bunda Sari 👋 Reminder: Iuran SPP Ananda Dafa bulan Juni belum dibayar (Rp 350.000). Jatuh tempo: 5 Juni 2026."
+              message="Halo Bunda Sari 👋 Reminder: Iuran SPP Ananda Dafa bulan Juni belum dibayar (Rp 350.000). Jatuh tempo: 5 Mei 2026."
               time="08:00"
               type="received"
             />
@@ -75,7 +74,7 @@ export const HeroCards = () => {
               type="sent"
             />
             <WAChatBubble
-              message="✅ Siap! Link pembayaran: bit.ly/bayar-spp. Ada pertanyaan? Ketik *BANTUAN*"
+              message="✅ Siap! Terimakasih Bunda Sari"
               time="08:15"
               type="received"
             />
@@ -93,16 +92,16 @@ export const HeroCards = () => {
         <Card className="border-2 border-primary/20">
           <CardHeader className="pb-2">
             <div className="flex items-center justify-between">
-              <p className="font-semibold text-sm">Status Pembayaran</p>
-              <Badge variant="secondary" className="text-xs text-primary bg-primary/10">Juni 2026</Badge>
+              <p className="font-semibold text-sm">Status Leads</p>
+              <Badge variant="secondary" className="text-xs text-primary bg-primary/10">Mei 2026</Badge>
             </div>
           </CardHeader>
           <CardContent className="space-y-2">
             {[
-              { name: "Ahmad Dafa", status: "Lunas", color: "bg-emerald-500" },
-              { name: "Siti Rahayu", status: "Menunggu", color: "bg-amber-400" },
-              { name: "Budi Santoso", status: "Lunas", color: "bg-emerald-500" },
-              { name: "Putri Dewi", status: "Terlambat", color: "bg-red-400" },
+              { name: "Afthar", status: "HOT Leads", color: "bg-red-500" },
+              { name: "Wiwin", status: "Warm Leads", color: "bg-amber-500" },
+              { name: "Aruna", status: "Cold Leads", color: "bg-blue-500" },
+              { name: "Septi", status: "Cold Leads", color: "bg-blue-500" },
             ].map((s) => (
               <div key={s.name} className="flex items-center justify-between py-1 border-b border-border last:border-0">
                 <div className="flex items-center gap-2">
@@ -119,7 +118,7 @@ export const HeroCards = () => {
             ))}
             <div className="mt-3 pt-2 border-t">
               <div className="flex justify-between text-xs text-muted-foreground mb-1">
-                <span>Progress Pembayaran</span>
+                <span>Progress Calon Pelanggan</span>
                 <span className="text-primary font-semibold">75%</span>
               </div>
               <div className="w-full bg-muted rounded-full h-2">

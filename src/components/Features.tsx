@@ -14,62 +14,62 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Reminder WhatsApp Otomatis",
+    title: "Reminder & Broadcast Otomatis",
     description:
-      "Sistem kami mengirim pengingat iuran dan tagihan secara otomatis ke orang tua siswa — tanpa perlu admin chat satu per satu.",
+      "Sistem kami mengirim pengingat jadwal, pembayaran, promo atau info penting lainnya secara otomatis — tanpa perlu admin chat satu per satu.",
     icon: <MessageCircle className="w-7 h-7 text-primary" />,
     badge: "Paling Digunakan",
     points: [
-      "Reminder jatuh tempo otomatis",
-      "Follow-up pembayaran otomatis",
-      "Notifikasi langsung ke orang tua",
+      "Follow-up tagihan",
+      "Info Promo",
+      "Notifikasi langsung ke pelanggan",
     ],
   },
   {
-    title: "Admin Digital AI",
+    title: "Asisten Sales Cerdas",
     description:
-      "Chatbot berbasis AI yang siap menjawab pertanyaan orang tua 24 jam — dari cek status pembayaran sampai info jadwal.",
+      "Sistem akan otomatis merespons pertanyaan pelanggan, menanyakan kebutuhan, dan mencatat data prospek (leads) sebelum diteruskan ke tim Anda.",
     icon: <Bot className="w-7 h-7 text-primary" />,
-    badge: "Berbasis AI",
+    badge: "Otomatisasi Sales",
     points: [
-      "Jawab pertanyaan umum orang tua",
-      "Bantu admin sekolah lebih santai",
-      "Respons cepat berbasis AI",
+      "Jawab pertanyaan umum 24 jam",
+      "Kualifikasi calon pelanggan",
+      "Respons cepat dan akurat",
     ],
   },
   {
-    title: "Monitoring Pembayaran",
+    title: "Monitoring Real-time",
     description:
-      "Pantau status pembayaran semua siswa dalam satu dashboard. Tahu siapa yang sudah bayar, siapa yang belum.",
+      "Pantau status pesan masuk dan kinerja admin dalam satu dashboard. Semua data tersinkronisasi otomatis.",
     icon: <BarChart3 className="w-7 h-7 text-primary" />,
     badge: "Real-time",
     points: [
-      "Status pembayaran per siswa",
-      "Riwayat transaksi lengkap",
-      "Monitoring cashflow lebih mudah",
+      "Kepuasan pelanggan",
+      "Riwayat aktivitas lengkap",
+      "Monitoring performa bisnis",
     ],
   },
   {
     title: "Hemat Waktu Admin",
     description:
-      "Biarkan sistem yang bekerja. Admin tidak perlu lagi chat satu-satu — fokus saja mengembangkan bisnis pendidikan.",
+      "Biarkan sistem yang bekerja. Admin tidak perlu lagi chat manual — fokus saja mengembangkan skala bisnis Anda.",
     icon: <Clock className="w-7 h-7 text-primary" />,
     badge: "Efisiensi",
     points: [
-      "Tidak perlu chat satu-satu lagi",
-      "Kurangi pekerjaan admin manual",
+      "Kurangi pekerjaan manual",
+      "Efisiensi biaya operasional",
       "Fokus kembangkan bisnis",
     ],
   },
 ];
 
 const featureTags: string[] = [
-  "WhatsApp Integration",
-  "AI-Powered",
-  "Real-time Dashboard",
+  "Tangkap Calon Pelanggan",
+  "Asisten Chatbot",
+  "Dashboard Real-time",
   "Reminder Otomatis",
-  "Multi-siswa",
-  "Laporan Bulanan",
+  "Multi-Tenant",
+  "Leads Otomatis",
   "Dark Mode",
   "Mobile Friendly",
   "Tanpa Install App",
@@ -82,7 +82,7 @@ const containerVariants = {
 
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.55,  } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.4, } },
 };
 
 export const Features = () => {
@@ -97,21 +97,21 @@ export const Features = () => {
           className="text-3xl lg:text-4xl font-extrabold"
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.4 }}
         >
-          Semua yang Kamu Butuhkan,{" "}
+          Satu Platform untuk Semua{" "}
           <span className="bg-gradient-to-r from-primary to-emerald-400 text-transparent bg-clip-text">
-            Dalam Satu Platform
+            Kebutuhan Bisnis Anda
           </span>
         </motion.h2>
         <motion.p
           className="text-muted-foreground text-lg max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 15 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.1 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
         >
-          Dari reminder otomatis hingga admin AI, Lancar Iuran hadir untuk meringankan
-          beban administrasi dan membuat cashflow lebih terkontrol.
+          Dari reminder otomatis hingga asisten chatbot cerdas, kami hadir untuk meringankan
+          beban administrasi dan memastikan layanan ke pelanggan tetap maksimal.
         </motion.p>
       </div>
 

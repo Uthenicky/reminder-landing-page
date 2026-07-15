@@ -36,16 +36,16 @@ const testimonials: TestimonialProps[] = [
     role: "Pemilik Bimbel",
     institution: "Bimbel Prestasi Malang",
     comment:
-      "Setelah pakai Lancar Iuran, tunggakan SPP turun drastis. Orang tua lebih responsif karena diingatkan via WA langsung. Mantap banget!",
+      "Setelah pakai LancarBales, tunggakan SPP turun drastis. Orang tua lebih responsif karena diingatkan via WA langsung. Mantap banget!",
     stars: 5,
   },
   {
     initials: "NF",
     name: "Nurul Fitri",
-    role: "Owner Daycare",
-    institution: "Daycare Buah Hati Bandung",
+    role: "Owner Travel",
+    institution: "Berkah Umroh & Tour",
     comment:
-      "Admin saya dulu kewalahan follow-up pembayaran. Sekarang dengan Lancar Iuran, semua otomatis dan laporan juga langsung ada. Sangat membantu!",
+      "Admin saya dulu kewalahan follow-up jamaah. Sekarang dengan LancarBales, semua reminder keberangkatan dan dokumen otomatis terkirim. Sangat membantu!",
     stars: 5,
   },
   {
@@ -60,19 +60,19 @@ const testimonials: TestimonialProps[] = [
   {
     initials: "RK",
     name: "Rizky Kurniawan",
-    role: "Pengelola Kursus",
-    institution: "English First Surabaya",
+    role: "Manager",
+    institution: "Rizky Sneakers Store",
     comment:
-      "Setup-nya gampang banget, tidak perlu skill teknis. Dalam 30 menit sudah langsung aktif. Orang tua senang dapat reminder, kami senang cashflow lancar.",
+      "Setup-nya gampang banget, tidak perlu skill teknis. Pelanggan senang dapat update resi otomatis, kami senang tidak perlu balas chat resi satu-satu.",
     stars: 5,
   },
   {
     initials: "AP",
     name: "Anita Putri",
-    role: "Guru Les Rumahan",
-    institution: "Les Piano & Menggambar",
+    role: "Travel Agent",
+    institution: "Jelajah Nusantara",
     comment:
-      "Cocok banget untuk les rumahan seperti saya. Harga starter-nya terjangkau, fiturnya lengkap. Tidak perlu lagi malu-malu nagih orang tua.",
+      "Cocok banget untuk agen travel seperti saya. Harga starter-nya terjangkau, fiturnya lengkap. Jamaah merasa lebih diperhatikan dengan update otomatis.",
     stars: 5,
   },
 ];
@@ -110,7 +110,7 @@ export const Testimonials = () => {
         >
           Dipercaya oleh{" "}
           <span className="bg-gradient-to-r from-primary to-emerald-400 text-transparent bg-clip-text">
-            Lembaga Pendidikan Indonesia
+            Ribuan Pemilik Bisnis
           </span>
         </motion.h2>
         <motion.p
@@ -119,7 +119,8 @@ export const Testimonials = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          Dari guru privat sampai sekolah — mereka semua merasakan manfaatnya.
+          Dari lembaga pendidikan, travel agent, hingga toko online
+          mereka semua telah merasakan manfaatnya.
         </motion.p>
       </div>
 
