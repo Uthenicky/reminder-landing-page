@@ -28,7 +28,7 @@ export const BusinessModules = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          Apapun bisnis Anda, Balesin hadir dengan modul khusus yang disesuaikan
+          Apapun bisnis Anda, LancarBales hadir dengan modul khusus yang disesuaikan
           untuk mempermudah manajemen operasional dan komunikasi dengan pelanggan.
         </motion.p>
       </div>

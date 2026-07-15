@@ -23,7 +23,7 @@ interface PricingProps {
   buttonText: string;
   highlighted: boolean;
   benefitList: string[];
-  maxSiswa: string;
+  messageLimit: string;
 }
 
 const pricingList: PricingProps[] = [
@@ -34,7 +34,7 @@ const pricingList: PricingProps[] = [
     description: "Cocok untuk menjawab pertanyaan pelanggan secara cepat dan otomatis.",
     buttonText: "Pilih Paket Balas",
     highlighted: false,
-    maxSiswa: "1.000 Pesan",
+    messageLimit: "1.000 Pesan",
     benefitList: [
       "Menjawab pertanyaan otomatis",
       "Belajar dari FAQ bisnis",
@@ -52,7 +52,7 @@ const pricingList: PricingProps[] = [
     badgeIcon: <Zap className="w-3 h-3" />,
     buttonText: "Pilih Balas Pro",
     highlighted: false,
-    maxSiswa: "10.000 Pesan",
+    messageLimit: "10.000 Pesan",
     benefitList: [
       "Semua fitur Paket Balas",
       "Kuota pesan 10x lebih banyak",
@@ -68,7 +68,7 @@ const pricingList: PricingProps[] = [
     badgeIcon: <Star className="w-3 h-3" />,
     buttonText: "Pilih Paket Sales",
     highlighted: true,
-    maxSiswa: "1.000 Pesan",
+    messageLimit: "1.000 Pesan",
     benefitList: [
       "Semua fitur Paket Balas",
       "Menanyakan kebutuhan pelanggan",
@@ -85,7 +85,7 @@ const pricingList: PricingProps[] = [
     badgeIcon: <Crown className="w-3 h-3" />,
     buttonText: "Pilih Sales Pro",
     highlighted: false,
-    maxSiswa: "10.000 Pesan",
+    messageLimit: "10.000 Pesan",
     benefitList: [
       "Semua fitur Paket Sales",
       "Kuota pesan 10x lebih banyak",
@@ -102,7 +102,7 @@ const containerVariants = {
 
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.55, } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.4, } },
 };
 
 export const Pricing = () => {
@@ -183,7 +183,7 @@ export const Pricing = () => {
                   variant="outline"
                   className="w-fit text-xs text-muted-foreground"
                 >
-                  {plan.maxSiswa}
+                  {plan.messageLimit}
                 </Badge>
 
                 <CardDescription className="mt-3 leading-relaxed text-sm">

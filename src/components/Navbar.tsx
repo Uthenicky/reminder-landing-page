@@ -63,7 +63,7 @@ export const Navbar = () => {
               <div className="bg-primary rounded-lg p-1.5 flex items-center justify-center">
                 <MessageCircle className="w-5 h-5 text-primary-foreground fill-primary-foreground" />
               </div>
-              <span className="text-foreground">Balesin</span>
+              <span className="text-foreground">LancarBales</span>
             </a>
           </NavigationMenuItem>
 
@@ -85,7 +85,7 @@ export const Navbar = () => {
                     <div className="bg-primary rounded-lg p-1.5">
                       <MessageCircle className="w-5 h-5 text-primary-foreground fill-primary-foreground" />
                     </div>
-                    Balesin
+                    LancarBales
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-6">

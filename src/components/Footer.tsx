@@ -58,11 +58,11 @@ export const Footer = () => {
               <MessageCircle className="w-5 h-5 text-primary-foreground fill-primary-foreground" />
             </div>
             <span>
-              Balesin
+              LancarBales
             </span>
           </a>
           <p className="text-muted-foreground text-sm leading-relaxed max-w-xs mb-6">
-            AI WhatsApp Chatbot yang membantu bisnis melayani pelanggan 24 jam dengan cerdas dan otomatis.
+            Asisten WhatsApp Cerdas yang membantu bisnis melayani pelanggan 24 jam secara otomatis.
           </p>
 
           {/* Social links */}
@@ -71,7 +71,7 @@ export const Footer = () => {
               href="https://instagram.com"
               target="_blank"
               rel="noreferrer noopener"
-              aria-label="Instagram Balesin"
+              aria-label="Instagram LancarBales"
               className="w-9 h-9 rounded-lg bg-muted border border-border flex items-center justify-center hover:border-primary/40 hover:bg-primary/10 transition-colors"
             >
               <Instagram className="w-4 h-4" />
@@ -80,7 +80,7 @@ export const Footer = () => {
               href="https://wa.me/6282299459702"
               target="_blank"
               rel="noreferrer noopener"
-              aria-label="WhatsApp Balesin"
+              aria-label="WhatsApp LancarBales"
               className="w-9 h-9 rounded-lg bg-muted border border-border flex items-center justify-center hover:border-primary/40 hover:bg-primary/10 transition-colors"
             >
               <MessageCircle className="w-4 h-4" />
@@ -89,7 +89,7 @@ export const Footer = () => {
               href="https://youtube.com"
               target="_blank"
               rel="noreferrer noopener"
-              aria-label="YouTube Balesin"
+              aria-label="YouTube LancarBales"
               className="w-9 h-9 rounded-lg bg-muted border border-border flex items-center justify-center hover:border-primary/40 hover:bg-primary/10 transition-colors"
             >
               <Youtube className="w-4 h-4" />
@@ -127,7 +127,7 @@ export const Footer = () => {
             rel="noreferrer noopener"
             className="text-primary hover:underline font-medium"
           >
-            Balesin
+            LancarBales
           </a>{" "}
           · Hak cipta dilindungi.
         </p>

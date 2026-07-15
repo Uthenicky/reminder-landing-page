@@ -7,10 +7,8 @@ import { cn } from "@/lib/utils";
 import type { Variants } from "framer-motion";
 
 const badges = [
-  "AI Admin WhatsApp",
-  "Balas Otomatis",
-  "Reminder Otomatis",
-  "WhatsApp Automation",
+  "Solusi WhatsApp Business",
+  "Otomatisasi Chat",
 ];
 
 const fadeUp: Variants = {
@@ -18,7 +16,7 @@ const fadeUp: Variants = {
   show: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.12, duration: 0.55 },
+    transition: { delay: i * 0.1, duration: 0.4 },
   }),
 };
 
@@ -53,13 +51,13 @@ export const Hero = () => {
           className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
         >
           <h1>
-            AI WhatsApp Chatbot yang Membantu Bisnis Melayani Pelanggan{" "}
+            Otomatiskan Balas Chat & Follow Up Pelanggan. Aktif{" "}
             <span className="inline bg-gradient-to-r from-primary to-teal-400 text-transparent bg-clip-text">
               24 Jam
-            </span>
+            </span>{" "}Tanpa Ribet.
           </h1>
         </motion.main>
 
@@ -68,9 +66,9 @@ export const Hero = () => {
           className="text-lg md:text-xl text-muted-foreground md:w-11/12 mx-auto lg:mx-0 leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.35 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Balas chat otomatis, menjawab pertanyaan pelanggan, mengumpulkan calon pelanggan, mengirim reminder, hingga membantu tim Sales & Marketing Anda bekerja lebih efisien.
+          Tinggalkan cara manual. Biarkan sistem kami membalas chat, mengirim pengingat tagihan, dan menangkap prospek penjualan secara otomatis saat Anda tidur.
         </motion.p>
 
         {/* CTA Buttons */}

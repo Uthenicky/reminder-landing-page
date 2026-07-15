@@ -26,15 +26,15 @@ const features: FeatureProps[] = [
     ],
   },
   {
-    title: "Admin Digital AI Lead Qualification",
+    title: "Asisten Sales Cerdas",
     description:
-      "Chatbot berbasis AI yang siap menjawab pertanyaan pelanggan 24 jam seputar info layanan, FAQ, Support hingga menangkap calon pelanggan.",
+      "Sistem akan otomatis merespons pertanyaan pelanggan, menanyakan kebutuhan, dan mencatat data prospek (leads) sebelum diteruskan ke tim Anda.",
     icon: <Bot className="w-7 h-7 text-primary" />,
-    badge: "Berbasis AI",
+    badge: "Otomatisasi Sales",
     points: [
       "Jawab pertanyaan umum 24 jam",
-      "Dapat menentukan calon pelanggan",
-      "Respons cepat berbasis AI",
+      "Kualifikasi calon pelanggan",
+      "Respons cepat dan akurat",
     ],
   },
   {
@@ -65,7 +65,7 @@ const features: FeatureProps[] = [
 
 const featureTags: string[] = [
   "Tangkap Calon Pelanggan",
-  "Admin Digital AI",
+  "Asisten Chatbot",
   "Dashboard Real-time",
   "Reminder Otomatis",
   "Multi-Tenant",
@@ -82,7 +82,7 @@ const containerVariants = {
 
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.55, } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.4, } },
 };
 
 export const Features = () => {
@@ -97,21 +97,21 @@ export const Features = () => {
           className="text-3xl lg:text-4xl font-extrabold"
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.4 }}
         >
-          Semua Fitur Core yang,{" "}
+          Satu Platform untuk Semua{" "}
           <span className="bg-gradient-to-r from-primary to-emerald-400 text-transparent bg-clip-text">
-            Anda Butuhkan
+            Kebutuhan Bisnis Anda
           </span>
         </motion.h2>
         <motion.p
           className="text-muted-foreground text-lg max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 15 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.1 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
         >
-          Dari reminder otomatis hingga admin AI, kami hadir untuk meringankan
-          beban administrasi dan tim Sales Anda untuk memastikan layanan ke pelanggan tetap maksimal.
+          Dari reminder otomatis hingga asisten chatbot cerdas, kami hadir untuk meringankan
+          beban administrasi dan memastikan layanan ke pelanggan tetap maksimal.
         </motion.p>
       </div>
 
