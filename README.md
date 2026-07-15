@@ -1,7 +1,7 @@
-# Lancar Iuran — Landing Page
+# LancarBales — Landing Page
 
-> Platform **WhatsApp Automation Reminder** untuk lembaga pendidikan Indonesia.
-> Reminder iuran & tagihan otomatis via WhatsApp, didukung AI Admin Digital.
+> Platform **WhatsApp Automation & Asisten Cerdas** untuk berbagai jenis bisnis (Toko Online, Jasa, hingga Lembaga Pendidikan).
+> Otomatiskan balasan chat, kelola prospek pelanggan, dan kirim pengingat (reminder) via WhatsApp secara efisien 24 jam.
 
 🌐 **Domain:** [lancarbales.com](https://lancarbales.com) &nbsp;|&nbsp; 👤 **Owner:** utheniky
 
@@ -26,28 +26,25 @@
 | Section | Komponen | Keterangan |
 |---|---|---|
 | Navbar | `Navbar.tsx` | Sticky, scroll-aware backdrop blur, CTA Coba Gratis |
-| Hero | `Hero.tsx` + `HeroCards.tsx` | Headline, badges, CTA, WhatsApp chat mockup |
-| Statistik | `Statistics.tsx` | Count-up: 500+ lembaga, 10k+ siswa, 95% tepat bayar |
-| Fitur | `Features.tsx` | 4 fitur utama: WA Reminder, AI Admin, Monitoring, Hemat Waktu |
-| Manfaat | `Benefits.tsx` | 5 manfaat bisnis dengan icon card |
-| Cara Kerja | `Services.tsx` | How It Works — 3 langkah mudah |
-| Testimoni | `Testimonials.tsx` | 6 testimoni dummy dari guru, bimbel, daycare |
-| Harga | `Pricing.tsx` | Trial / Starter Rp99k / Growth Rp149k / Pro Rp249k |
-| FAQ | `FAQ.tsx` | 7 pertanyaan umum Bahasa Indonesia |
-| Footer | `Footer.tsx` | WA CTA banner, social links, copyright © 2026 |
+| Hero | `Hero.tsx` + `HeroCards.tsx` | Headline berfokus pada hasil, badges, CTA, simulasi chat |
+| Modul Bisnis | `BusinessModules.tsx` | Fungsionalitas tab berdasarkan niche (Pendidikan, Jasa, Toko) |
+| Fitur | `Features.tsx` | 4 fitur utama: WA Reminder, Asisten Cerdas, Monitoring, Efisiensi Waktu |
+| Manfaat | `Benefits.tsx` | Manfaat implementasi bisnis dengan icon card |
+| Cara Kerja | `Services.tsx` | How It Works — langkah mudah penggunaan |
+| Harga | `Pricing.tsx` | Paket Balas & Paket Sales dengan fitur dan kuota (messageLimit) |
+| FAQ | `FAQ.tsx` | Pertanyaan umum seputar layanan |
+| Footer | `Footer.tsx` | WA CTA banner, social links, menu navigasi perusahaan |
 
 ---
 
 ## Fitur & Highlights
 
-- ✅ **Fully Responsive** — Mobile-first, berfungsi di HP, tablet, dan laptop
+- ✅ **Fully Responsive** — Mobile-first, optimal di HP, tablet, dan laptop
 - ✅ **Dark Mode & Light Mode** — Toggle instan via Shadcn theme-provider
-- ✅ **Animasi Framer Motion** — Fade-up, stagger children, float, count-up
-- ✅ **SEO-ready** — Meta tags, Open Graph, Twitter Card, lang="id"
-- ✅ **WhatsApp Chat Mockup** — Visual demo reminder otomatis di Hero
-- ✅ **Harga Rupiah** — Format lokal `Rp 99.000 / bulan`
-- ✅ **Copywriting Indonesia** — Bahasa sederhana, fokus manfaat bisnis
-- ✅ **Tanpa API eksternal** — Fully static, deploy ke mana saja
+- ✅ **Animasi Framer Motion** — Animasi ringan (fade-up, stagger) yang sudah dipercepat agar gesit
+- ✅ **SEO-ready** — Meta tags, siap di-crawl mesin pencari
+- ✅ **Copywriting Outcome-Based** — Bebas jargon teknis berlebih ("AI Slop"), berfokus pada manfaat dan hasil nyata bagi bisnis.
+- ✅ **Vercel Ready** — Dilengkapi dengan `vercel.json` dan `.env.example` untuk deployment mulus.
 
 ---
 
@@ -55,36 +52,34 @@
 
 ```
 src/
-├── App.tsx                  # Root — susun semua section
-├── App.css                  # Emerald theme & Tailwind base
-├── index.css                # Scroll behavior & shadow animation
+├── App.tsx                  # Root — menyusun halaman
+├── index.css                # Styling utama & Tailwind base
 ├── main.tsx                 # Entry point + ThemeProvider
 ├── assets/
-│   ├── icon.ico             # Favicon
-│   └── icon.png             # Favicon backup
 ├── components/
 │   ├── ui/                  # Shadcn/UI primitives (Button, Card, dll)
 │   ├── Navbar.tsx
 │   ├── Hero.tsx
-│   ├── HeroCards.tsx        # WhatsApp chat mockup cards
-│   ├── Statistics.tsx       # Count-up stats
+│   ├── HeroCards.tsx
+│   ├── BusinessModules.tsx  # Tab konten per jenis bisnis
 │   ├── Features.tsx
-│   ├── Benefits.tsx         # [NEW]
-│   ├── Services.tsx         # How It Works
-│   ├── Testimonials.tsx
+│   ├── Benefits.tsx
+│   ├── Services.tsx
 │   ├── Pricing.tsx
 │   ├── FAQ.tsx
 │   ├── Footer.tsx
-│   ├── ScrollToTop.tsx
-│   ├── mode-toggle.tsx      # Dark/light toggle
-│   └── theme-provider.tsx   # Context provider tema
+│   ├── mode-toggle.tsx
+│   └── theme-provider.tsx
+├── pages/
+│   ├── LandingPage.tsx      # Menampung seluruh seksi beranda
+│   └── AboutPage.tsx        # Halaman Tentang Kami, Kontak & Legal
 └── lib/
-    └── utils.ts             # cn() — clsx + tailwind-merge
+    └── utils.ts             # cn() utility
 ```
 
 ---
 
-## Cara Menjalankan
+## Cara Menjalankan (Development)
 
 **1. Clone repository:**
 ```bash
@@ -97,40 +92,30 @@ cd shadcn-landing-page
 npm install
 ```
 
-**3. Jalankan development server:**
+**3. Setup Environment Variables:**
+Copy `.env.example` menjadi `.env` jika diperlukan (khusus untuk `VITE_API_BASE_URL`).
+```bash
+cp .env.example .env
+```
+
+**4. Jalankan development server:**
 ```bash
 npm run dev
 # → http://localhost:5173
 ```
 
-**4. Build untuk production:**
-```bash
-npm run build
-```
-
-**5. Preview hasil build:**
-```bash
-npm run preview
-```
-
 ---
 
-## Konfigurasi Kontak
+## Deployment (Vercel)
 
-Nomor WhatsApp aktif digunakan di beberapa komponen. Untuk mengubah nomor, cari dan ganti di file berikut:
-
-| File | Lokasi |
-|---|---|
-| `Navbar.tsx` | Tombol "Coba Gratis" desktop & mobile |
-| `Hero.tsx` | CTA button utama |
-| `Services.tsx` | Tombol CTA bawah section |
-| `FAQ.tsx` | Link "Tanya via WhatsApp" |
-| `Footer.tsx` | Banner CTA + ikon sosial WA |
-
-Format nomor: `https://wa.me/628XXXXXXXXXX` (tanpa +, tanpa 0 di depan)
+Proyek ini telah dikonfigurasi untuk **Vercel**.
+1. Import repository ke Vercel Dashboard.
+2. Tambahkan Environment Variable: `VITE_API_BASE_URL` sesuai API produksi.
+3. Aturan *routing* SPA telah dikelola otomatis oleh `vercel.json`.
+4. Deploy!
 
 ---
 
 ## Lisensi
 
-MIT License © 2026 [Lancar Iuran](https://lancarbales.com)
+MIT License © 2026 [LancarBales](https://lancarbales.com)
